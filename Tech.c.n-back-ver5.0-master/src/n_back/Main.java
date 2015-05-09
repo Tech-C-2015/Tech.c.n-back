@@ -24,6 +24,7 @@ import java.util.Collections;
 import java.util.List;
 
 //アプレット本体 Mainクラス
+//testing
 public class Main extends Applet {
 
 	// コンボボックス、スタートボタンの為のインスタンスの準備
