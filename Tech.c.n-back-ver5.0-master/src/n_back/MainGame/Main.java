@@ -201,28 +201,75 @@ public class Main extends Applet {
 		addMouseListener(new MouseAdapter(){
 
 			public void mouseClicked(MouseEvent e){
-				int x = e.getX();
-				int y = e.getY();
-				int xu = 30;
-				int xl = 60;
-                int sumClick = 0;
-				if (y >= 350 && y <= 425) {
-                    int sumIf = 0;
-                    while(x < sumIf + xu && x > sumIf + xu + 75){
-                        sumIf = sumIf + 80;
-                        sumClick = sumClick + 1;
-                    }
-                    Judge(sumClick);
-				} else if (y > 450 && y <= 575) {
-                    int sumIf = 0;
-                    while(x < sumIf + xl && x > sumIf + xl + 75){
-                        sumIf = sumIf + 80;
-                        sumClick = sumClick + 1;
-                    }
-                    Judge(sumClick);
-				}
-				repaint();
-			}
+					int x = e.getX();
+					int y = e.getY();
+					int xu = 30;
+					int xl = 60;
+					int clickednum = 0;
+					if (y >= 350 && y <= 425) {
+						if (x >= xu && x <= 75 + xu) {
+							clickednum = 0;
+							Judge(clickednum);
+						} else if (x >= 80 + xu && x <= 155 + xu) {
+							clickednum = 1;
+							Judge(clickednum);
+						} else if (x >= 160 + xu && x <= 235 + xu) {
+							clickednum = 2;
+							Judge(clickednum);
+						} else if (x >= 240 + xu && x <= 315 + xu) {
+							clickednum = 3;
+							Judge(clickednum);
+						} else if (x >= 320 + xu && x <= 395 + xu) {
+							clickednum = 4;
+							Judge(clickednum);
+						} else if (x >= 400 + xu && x <= 475 + xu) {
+							clickednum = 5;
+							Judge(clickednum);
+						} else if (x >= 480 + xu && x <= 555 + xu) {
+							clickednum = 6;
+							Judge(clickednum);
+						} else if (x >= 560 + xu && x <= 635 + xu) {
+							clickednum = 7;
+							Judge(clickednum);
+						} else if (x >= 640 + xu && x <= 715 + xu) {
+							clickednum = 8;
+							Judge(clickednum);
+						} else if (x >= 720 + xu && x <= 795 + xu) {
+							clickednum = 9;
+							Judge(clickednum);
+						}
+
+					} else if (y > 450 && y <= 575) {
+
+						if (x >= xl && x <= 75 + xl) {
+							clickednum = 10;
+							Judge(clickednum);
+						} else if (x >= 80 + xl && x <= 155 + xl) {
+							clickednum = 11;
+							Judge(clickednum);
+						} else if (x >= 160 + xl && x <= 235 + xl) {
+							clickednum = 12;
+							Judge(clickednum);
+						} else if (x >= 240 + xl && x <= 315 + xl) {
+							clickednum = 13;
+							Judge(clickednum);
+						} else if (x >= 320 + xl && x <= 395 + xl) {
+							clickednum = 14;
+							Judge(clickednum);
+						} else if (x >= 400 + xl && x <= 475 + xl) {
+							clickednum = 15;
+							Judge(clickednum);
+						} else if (x >= 480 + xl && x <= 555 + xl) {
+							clickednum = 16;
+							Judge(clickednum);
+						} else if (x >= 560 + xl && x <= 635 + xl) {
+							clickednum = 17;
+							Judge(clickednum);
+						} else if (x >= 640 + xl && x <= 715 + xl) {
+							clickednum = 18;
+							Judge(clickednum);
+						}
+					}
 		});
 
 
